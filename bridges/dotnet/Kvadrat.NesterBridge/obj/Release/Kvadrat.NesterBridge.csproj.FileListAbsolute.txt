@@ -1,0 +1,8 @@
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\Kvadrat.NesterBridge\obj\Release\Kvadrat.NesterBridge.csproj.AssemblyReference.cache
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\Kvadrat.NesterBridge\obj\Release\Kvadrat.NesterBridge.csproj.CoreCompileInputs.cache
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\Kvadrat.NesterBridge\bin\Release\Kvadrat.NesterBridge.dll
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\Kvadrat.NesterBridge\bin\Release\Kvadrat.NesterBridge.pdb
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\Kvadrat.NesterBridge\bin\Release\Newtonsoft.Json.dll
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\Kvadrat.NesterBridge\obj\Release\Kvadrat..9766FB35.Up2Date
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\Kvadrat.NesterBridge\obj\Release\Kvadrat.NesterBridge.dll
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\Kvadrat.NesterBridge\obj\Release\Kvadrat.NesterBridge.pdb

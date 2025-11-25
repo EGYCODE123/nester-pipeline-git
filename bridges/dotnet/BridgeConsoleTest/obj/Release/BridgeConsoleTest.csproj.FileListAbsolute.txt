@@ -1,0 +1,11 @@
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\bin\Release\BridgeConsoleTest.exe.config
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\bin\Release\BridgeConsoleTest.exe
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\bin\Release\BridgeConsoleTest.pdb
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\bin\Release\Kvadrat.NesterBridge.dll
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\bin\Release\Newtonsoft.Json.dll
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\bin\Release\Kvadrat.NesterBridge.pdb
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\obj\Release\BridgeConsoleTest.csproj.AssemblyReference.cache
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\obj\Release\BridgeConsoleTest.csproj.CoreCompileInputs.cache
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\obj\Release\BridgeCo.278CEC23.Up2Date
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\obj\Release\BridgeConsoleTest.exe
+Z:\CPQ Waste\nester-pipeline\bridges\dotnet\BridgeConsoleTest\obj\Release\BridgeConsoleTest.pdb

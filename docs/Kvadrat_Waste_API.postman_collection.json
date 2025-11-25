@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "kvadrat-waste-api-collection",
+		"name": "Kvadrat Waste API",
+		"description": "API collection for Kvadrat Waste Efficiency calculations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000",
+			"type": "string"
+		},
+		{
+			"key": "API_TOKEN",
+			"value": "YQAKNgR68GvWoB0Ij3zwFirpdDhtb9ST4c5ZaVHUkP2M1xJq",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/health",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"health"
+					]
+				},
+				"description": "Check API health status"
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Efficiency - Single Line",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{API_TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"quote_id\": \"Q-2025-00123\",\n  \"model\": \"blinds\",\n  \"available_widths_mm\": [1900, 2050, 2400, 3000],\n  \"lines\": [\n    {\n      \"line_id\": \"L1\",\n      \"width_mm\": 2400,\n      \"drop_mm\": 2100,\n      \"qty\": 2,\n      \"fabric_code\": \"FAB001\",\n      \"series\": \"SERIES-A\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/waste/efficiency",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"waste",
+						"efficiency"
+					]
+				},
+				"description": "Calculate waste efficiency for a single line order"
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Efficiency - Multiple Lines",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{API_TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"quote_id\": \"Q-2\",\n  \"model\": \"blinds\",\n  \"available_widths_mm\": [1900, 2050, 2400, 3000],\n  \"lines\": [\n    {\n      \"line_id\": \"L1\",\n      \"width_mm\": 2400,\n      \"drop_mm\": 2100,\n      \"qty\": 3,\n      \"fabric_code\": \"FAB001\"\n    },\n    {\n      \"line_id\": \"L2\",\n      \"width_mm\": 1800,\n      \"drop_mm\": 1500,\n      \"qty\": 5,\n      \"fabric_code\": \"FAB002\"\n    },\n    {\n      \"line_id\": \"L3\",\n      \"width_mm\": 3000,\n      \"drop_mm\": 2500,\n      \"qty\": 1,\n      \"series\": \"SERIES-B\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/waste/efficiency",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"waste",
+						"efficiency"
+					]
+				},
+				"description": "Calculate waste efficiency for multiple lines"
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Efficiency - Header Model",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{API_TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"quote_id\": \"Q-4\",\n  \"model\": \"header\",\n  \"lines\": [\n    {\n      \"line_id\": \"L1\",\n      \"width_mm\": 2000,\n      \"drop_mm\": 500,\n      \"qty\": 4\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/waste/efficiency",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"waste",
+						"efficiency"
+					]
+				},
+				"description": "Calculate waste efficiency for header model"
+			},
+			"response": []
+		}
+	]
+}
+

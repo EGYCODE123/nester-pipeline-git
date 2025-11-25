@@ -1,0 +1,69 @@
+{
+  "happy_path": {
+    "quote_id": "Q-1",
+    "model": "blinds",
+    "available_widths_mm": [1900, 2050, 2400, 3000],
+    "lines": [
+      {
+        "line_id": "L1",
+        "width_mm": 2400,
+        "drop_mm": 2100,
+        "qty": 2,
+        "fabric_code": "FAB001",
+        "series": "SERIES-A"
+      }
+    ]
+  },
+  "multi_line": {
+    "quote_id": "Q-2",
+    "model": "blinds",
+    "lines": [
+      {
+        "line_id": "L1",
+        "width_mm": 2400,
+        "drop_mm": 2100,
+        "qty": 3,
+        "fabric_code": "FAB001"
+      },
+      {
+        "line_id": "L2",
+        "width_mm": 1800,
+        "drop_mm": 1500,
+        "qty": 5,
+        "fabric_code": "FAB002"
+      },
+      {
+        "line_id": "L3",
+        "width_mm": 3000,
+        "drop_mm": 2500,
+        "qty": 1,
+        "series": "SERIES-B"
+      }
+    ]
+  },
+  "invalid_width_zero": {
+    "quote_id": "Q-3",
+    "model": "blinds",
+    "lines": [
+      {
+        "line_id": "L1",
+        "width_mm": 0,
+        "drop_mm": 2100,
+        "qty": 2
+      }
+    ]
+  },
+  "header_model": {
+    "quote_id": "Q-4",
+    "model": "header",
+    "lines": [
+      {
+        "line_id": "L1",
+        "width_mm": 2000,
+        "drop_mm": 500,
+        "qty": 4
+      }
+    ]
+  }
+}
+
