@@ -45,7 +45,7 @@ class Settings(BaseSettings):
         return []
     
     # Security
-    API_KEY: str = ""  # Optional for now - set in Railway Variables
+    API_KEY: str = "YQAKNgR68GvWoB0Ij3zwFirpdDhtb9ST4c5ZaVHUkP2M1xJq"  # Optional for now - set in Railway Variables
     
     # Rate limiting
     RATE_LIMIT_PER_MINUTE: int = 60
