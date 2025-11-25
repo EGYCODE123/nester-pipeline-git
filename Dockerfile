@@ -39,8 +39,8 @@ ENV API_LOG_LEVEL=info
 ENV PYTHONUNBUFFERED=1
 
 # Run uvicorn with multiple workers
-# Use PORT env variable (Railway provides this) or fallback to 8000
-CMD ["sh", "-c", "uvicorn nester_api.app.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 4"]
+# Force port 8000 to match Railway networking configuration
+CMD ["sh", "-c", "uvicorn nester_api.app.main:app --host 0.0.0.0 --port 8000 --workers 4"]
 
 
 
